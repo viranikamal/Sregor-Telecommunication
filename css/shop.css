@@ -1,0 +1,698 @@
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box; 
+  overflow-x: hidden; 
+}
+
+
+*{
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+
+/* all-nav class  include two sub-classes that name is navbar-class[class-pb] and class = fs-and-si[id = si <-- class-form and id = fs <-- Montreal { class = "name" }] */
+.all-nav{
+  background: #Da291c;
+  box-shadow: 1px 1px 4px  #Da291c;
+  box-shadow: -1px -1px 4px #Da291c;
+  width: 100%;
+  padding: 1rem 0;
+
+  
+}
+/* navbar class have two sub classes class: pb and class: fs-and-si. */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: #Da291c;
+  color: white;
+  padding: 0rem 7rem;
+  box-shadow: #Da291c 1px 1px;
+}
+
+/* class : fs-and-si */
+.fs-and-si{
+  display: flex;
+  margin-left: 2rem;
+
+}
+/* we have id : fs in class : fs-and-si */
+.fs-and-si #fs{
+  padding-left: 1rem;
+}
+
+
+
+/* path: class: main-nav <-- class: all-nav <-- class: navbar <-- class: pb <== heading (personal and business) */
+.pb h3{
+  display: inline-block;
+  margin-left: 3rem;
+}
+.pb a{
+  text-decoration: none;
+  color: white;
+}
+/* for dropdown menu */
+/* Montreal class that include store and name classes we give position relative beacuse it is parent directory of class store and name. */
+ .Montreal{
+  position: relative;
+  display: inline-block;
+}
+.Montreal .store{
+  background: #Da291c;
+  color: white;
+  min-width: 60px;
+  border: none;
+}
+/* hover effects for store class  */
+.Montreal .store:hover span{
+  background-color: #Da291c;;
+  color: white;
+  cursor: pointer;
+}
+
+.Montreal .store:hover{
+  background-color: #Da291c;;
+  color: wheat;
+  cursor: pointer;
+}
+/*  location names that we want to include and we give absolute position to class-name: name  */
+.name
+{
+   display: none;
+   position: absolute;
+   padding-top: 2rem;
+   z-index: 3;
+}
+.name a{
+  text-decoration: none;
+  color: white;
+  margin-top: 0.5rem;
+  display: block;
+  padding: 8px 0;
+  border: 1px black solid;
+  background-color: coral;
+
+}
+
+.name a:hover{
+  color: black;
+  
+}
+/* when we go to the find store button then our locations will be displayed as block. */
+.Montreal:hover .name
+{
+  display: block;
+}
+/* for all form  */
+.info{
+  background: white;
+  color: blue;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  margin-right: 20rem;
+  font-size: 14px;
+  
+}
+/* we gonna do css for form class info */
+.form .info .Form-header{
+  background: #f1f3f5;
+  padding: 4px;
+  color: black;
+  font-size: 10px;
+  
+}
+.Form-body #check{
+  margin-right: 0.5rem;
+  margin-top: 1px;
+}
+.form .Form-header #icon{
+  display: flex;
+  padding: 5px;
+  color: silver;  
+}
+
+.Form-header p{
+  color: black;
+  display: flex;
+  padding: 2px;
+}
+/* we have to display flex otherwise everything will be shown into middle that looh ugly*/
+.Form-body label , .Form-body p , input{
+   display: flex;
+   padding-right: 8px;
+   color: silver;
+
+}
+
+.Form-body input{
+  border-radius: 3px;
+}
+
+  .Form-body button{
+    padding: 4px 60px;
+    border-radius: 3px;
+    background-color: #Da291c;
+    color: white;
+
+  }
+  .Form-body p{
+    display: flex;
+  }
+
+  .form .form-footer{
+  background: #f1f3f5;
+  padding: 4px;
+  color: black;
+  font-size: 10px;
+  }
+
+  .form-footer p{
+    display: flex;
+    padding: 10px;
+  }
+ /* for  form drop down */
+/*  concept is same as find store */
+ .form{
+   display: inline-block;
+   position: relative;
+   
+ }
+
+ .form .Sign-in:hover{
+   cursor: pointer;
+   color: green;
+ }
+ 
+ .form .Sign-in:hover span{
+  cursor: pointer;
+  color: white;
+}
+ .form .info{
+   position: absolute;
+   z-index: 3;
+   display: none;
+   padding-top: 2rem;
+   margin-top: 15px;
+   border: 1px solid black;
+ 
+}
+
+
+ .form:hover .info{
+   display: block;
+  
+}
+
+
+.header{
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  background-color: #FFFFFFF2;
+  color: #414042;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  box-shadow: 1px 1px 10px  silver;
+  box-shadow: -1px -1px 10px  silver;
+  
+}
+.header .logo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 200px;
+  color: #Da291c;
+  margin-left: 200px;
+  margin-top: 24px;
+ 
+}
+/* hover effect on logo */
+.header .logo:hover{
+  transition: color 3s ease;
+  color: rebeccapurple; 
+  cursor: pointer;
+  text-shadow: rgb(14, 45, 221) 1px 1px 2px 2px;
+}
+
+.header .logo span{
+  color: black;
+}
+
+.header .header-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.header .header-links a:hover{
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+}
+.header-links{
+  padding-top: 30px;  
+  display: flex;
+}
+.header-links p{
+  margin-left: 2rem;
+}
+/* class: showcase-shop --> class: showcase-shop-heading + class : showcase-shop-info*/
+.showcase-shop{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 400px;
+  margin-top: 205px;
+  background: white;
+  box-shadow: #414042 1px 1px 4px 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.showcase-shop > .showcase-shop-heading > h1 > span{
+  color: #Da291c;
+}
+
+.showcase-shop > .showcase-shop-heading{
+  font-size: 46px;
+  text-align: center;
+  padding:1rem 1rem;
+}
+
+.showcase-shop > .showcase-shop-info{
+  text-align: center;
+  padding: 8rem 2rem;
+  font-size: 18px;
+}
+
+.showcase-shop > .showcase-shop-info > h3{
+  font-size: 34px;
+}
+
+.showcase-shop-page-main-2{
+  background: silver;
+}
+
+.showcase-shop-page-main-2 > .wp{
+  padding: 3rem;
+}
+
+.showcase-shop-page-main-2 > .wp > h2{
+  padding-top: 2rem;
+  font-size: 40px;
+}
+.wireless-and-business{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  width: 30%;
+}
+
+.wireless-and-business > .Wire-less{
+  border: 1px black solid;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+ 
+}
+
+.wireless-and-business > .commericial{
+  border: 1px black solid;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.wireless-and-business > .Wire-less:hover{
+  background: #Da291c;
+  color: white;
+  cursor: pointer;
+}
+
+.wireless-and-business > .commericial:hover{
+  background: #Da291c;
+  color: white;
+  cursor: pointer;
+}
+
+.showcase-shop-page-main-2 > .two-divides-parts >.offer-types {
+  padding:1rem 3rem;
+}
+
+.showcase-shop-page-main-2 > .two-divides-parts > .offer-types > form >div {
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.showcase-shop-page-main-2 > .two-divides-parts > .offer-types > form > div > input {
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+}
+
+
+.showcase-shop-page-main-2 > .two-divides-parts > .offer-types > form  > button{
+ width: 100px;
+ height: 50px;
+ border-radius: 10px;
+ border: 1px  #Da291c solid;
+ cursor: pointer;
+}
+
+.two-divides-parts{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  
+}
+/* phone-1 */
+.shop-phn-u-want > .shop-phn-iphone-11{
+  background: white;
+  width: 900px;
+  height: 450px;
+}
+
+.shop-phn-u-want > .shop-phn-iphone-11 > h3{
+  padding: 1rem;
+}
+
+.shop-phn-u-want > .shop-phn-iphone-11 > .phone-img-and-info {
+  display: flex;
+
+}
+.shop-phn-u-want > .shop-phn-iphone-11 > .phone-img-and-info > .shop-phone-1-img{
+  background: url('/Img/shop-phone-1.jpg') no-repeat center center/cover;
+  width: 800px;
+  height: 300px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+   
+}
+
+.shop-phn-u-want > .shop-phn-iphone-11 > .phone-img-and-info > .shop-phone-1-info{
+  padding-top: 4rem;
+  padding-left: 4rem;
+  
+}
+.shop-phn-u-want >.shop-phn-iphone-11 > .phone-img-and-info > .shop-phone-1-info > button { 
+ margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  background: #Da291c;
+  color: white;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.shop-phn-u-want > .shop-phn-iphone-11 > a{
+  text-decoration: none;
+  padding: 2rem;
+  
+}
+
+/* phone-2 */
+.shop-phn-u-want > .shop-phn-Galaxy-S20{
+  background: white;
+  width: 900px;
+  height: 420px;
+}
+
+.shop-phn-u-want > .shop-phn-Galaxy-S20 > h3{
+  padding: 1rem;
+}
+
+.shop-phn-u-want > .shop-phn-Galaxy-S20 > .phone-img-and-info {
+  display: flex;
+
+}
+.shop-phn-u-want > .shop-phn-Galaxy-S20 > .phone-img-and-info > .shop-phone-2-img{
+  background: url('/Img/shop-phone-2.jpg') no-repeat center center/cover;
+  width: 1400px;
+  height: 200px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+   
+}
+
+.shop-phn-u-want > .shop-phn-Galaxy-S20 > .phone-img-and-info > .shop-phone-2-info{
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.shop-phn-u-want >.shop-phn-Galaxy-S20 > .phone-img-and-info > .shop-phone-2-info > button { 
+ margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  background: #Da291c;
+  color: white;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.shop-phn-u-want > .shop-phn-Galaxy-S20 > a{
+  text-decoration: none;
+  padding: 2rem;
+  
+}
+
+/* phone-3 */
+.shop-phn-u-want > .shop-phn-iPhone-XR{
+  background: white;
+  width: 900px;
+  height: 450px;
+}
+
+.shop-phn-u-want > .shop-phn-iPhone-XR > h3{
+  padding: 1rem;
+}
+
+.shop-phn-u-want > .shop-phn-iPhone-XR > .phone-img-and-info {
+  display: flex;
+
+}
+.shop-phn-u-want > .shop-phn-iPhone-XR > .phone-img-and-info > .shop-phone-3-img{
+  background: url('/Img/shop-phone-3.jpg') no-repeat center center/cover;
+  width: 800px;
+  height: 300px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+   
+}
+
+.shop-phn-u-want > .shop-phn-iPhone-XR > .phone-img-and-info > .shop-phone-3-info{
+  padding-top: 4rem;
+  padding-left: 4rem;
+  
+}
+.shop-phn-u-want >.shop-phn-iPhone-XR > .phone-img-and-info > .shop-phone-3-info > button { 
+ margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  background: #Da291c;
+  color: white;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.shop-phn-u-want > .shop-phn-iPhone-XR > a{
+  text-decoration: none;
+  padding: 2rem;
+  
+}
+
+/* refer to friend */
+.shop-phn-u-want > .refer-to-friends{
+  background: white;
+  width: 900px;
+  height: 400px;
+}
+
+.shop-phn-u-want > .refer-to-friends > h3{
+  padding: 1rem;
+}
+
+.shop-phn-u-want > .refer-to-friends > .phone-img-and-info {
+  display: flex;
+
+}
+.shop-phn-u-want > .refer-to-friends > .phone-img-and-info > .refer-friend-img{
+  background: url('/Img/shop-phone-4.jpg') no-repeat center center/cover;
+  width: 1800px;
+  height: 250px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+   
+}
+
+.shop-phn-u-want > .refer-to-friends> .phone-img-and-info > .refer-friend-info{
+  padding-top: 2rem;
+  padding-left: 2rem;
+  
+}
+.shop-phn-u-want >.refer-to-friends > .phone-img-and-info > .refer-friend-info > button { 
+ margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  background: #Da291c;
+  color: white;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.shop-phn-u-want > .refer-to-friends > a{
+  text-decoration: none;
+  padding: 2rem;
+  
+}
+
+/* free wireless service */
+.shop-phn-u-want > .three-months-free-service{
+  background: white;
+  width: 900px;
+  height: 450px;
+}
+
+.shop-phn-u-want > .three-months-free-service > h3{
+  padding: 1rem;
+}
+
+.shop-phn-u-want > .three-months-free-service > .phone-img-and-info {
+  display: flex;
+
+}
+.shop-phn-u-want > .three-months-free-service > .phone-img-and-info > .free-service-img{
+  background: url('/Img/shop-phone-5.jpg') no-repeat center center/cover;
+  width: 1000px;
+  height: 300px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+   
+}
+
+.shop-phn-u-want > .three-months-free-service > .phone-img-and-info > .service-info{
+  padding-top: 4rem;
+  padding-left: 4rem;
+  
+}
+.shop-phn-u-want > .three-months-free-service > .phone-img-and-info > .service-info > h4{
+  color: black;
+  background: orange;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+.shop-phn-u-want >.three-months-free-service > .phone-img-and-info > .service-info > button { 
+ margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  background: #Da291c;
+  color: white;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.shop-phn-u-want > .three-months-free-service > a{
+  text-decoration: none;
+  padding: 2rem;
+  
+}
+
+/* footer */
+.all-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.link-part-1 , .link-part-2 , .link-part-3 , .link-part-4{
+  list-style: none;
+  
+}
+
+.link-part-1 > li , .link-part-2 > li , .link-part-3 > li , .link-part-4 > li{
+  padding: 0.5rem;
+  
+}
+
+.link-part-1 > li:hover , .link-part-2 > li:hover , .link-part-3 > li:hover, .link-part-4 > li:hover{
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.link-part-4 > .social-links{
+  display: flex;
+  padding: 2rem 0.5rem;
+}
+
+.link-part-4 > .social-links > li{
+  margin-right: 1rem;
+}
+/* css for class logo */
+
+.footer .logo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 200px;
+  color: #Da291c;
+  margin-left: 1.5rem;
+  margin-top: 24px;
+ 
+}
+
+.footer .logo:hover{
+  transition: color 3s ease;
+  color: rebeccapurple; 
+  cursor: pointer;
+  text-shadow: rgb(14, 45, 221) 1px 1px 2px 2px;
+}
+
+.footer .logo span{
+  color: black;
+}
+
+.link-part-4  .social-links li a{
+  list-style: none;
+  color: black;
+}
+
+.link-part-4  .social-links li:hover{
+  background: #Da291c;
+  border-radius: 12px;
+}
+
+/*class: copy-right */
+ .footer > .copy-right{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer{
+  padding: 0 5rem;
+}

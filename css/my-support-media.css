@@ -1,0 +1,537 @@
+@media(max-width: 801px)
+{
+
+  
+   /* all-nav class  include two sub-classes that name is navbar-class[class-pb] and class = fs-and-si[id = si <-- class-form and id = fs <-- Montreal { class = "name" }] */
+  .all-nav{
+    
+    width: 100%;
+    z-index: 2;
+    padding: 10px 0;
+    font-size: 20px;
+    
+  }
+  /*  */
+  .navbar{
+   
+    padding: 0px 10px;
+    box-shadow: #Da291c 1px 1px;
+  }
+  
+  .fs-and-si{
+    display: flex;
+    margin-left: 3px;
+  
+  }
+  .fs-and-si #fs{
+    padding-left: 6px;
+  }
+  
+  
+  
+  /* for personal and   business class */
+  .pb h3{
+    margin-left: 8px;
+  }
+ 
+  /* for dropdown menu */
+  /* Montreal class that include store and name classes we give position relative beacuse it is parent directory of class store and name. */
+  
+  .Montreal .store{
+   min-width: 10px; 
+  }
+ 
+  /*  location names that we want to include and we give absolute position to class-name: name  */
+  .name
+  {
+     padding-top: 10px;
+  }
+  .name a{
+    margin-top: 10px;
+   }
+ 
+  /* for all form  */
+  .info{
+    
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    
+  }
+  /* we gonna do css for form class info */
+  .form .info .Form-header{
+    background: #f1f3f5;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    
+  }
+  
+  .form .Form-header #icon{
+    display: flex;
+    padding: 8px;
+    color: silver;  
+  }
+  
+  .Form-header p{
+    color: black;
+    display: flex;
+    padding: 8px;
+  }
+  /* we have to display flex otherwise everything will be shown into middle that looh ugly*/
+  .Form-body label , .Form-body p , input{
+     display: flex;
+     padding-right: 1rem;
+     color: silver;
+  
+  }
+  
+  .Form-body input{
+    border-radius: 3px;
+    
+    }
+  
+    .Form-body button{
+      padding: 4px 60px;
+      border-radius: 3px;
+      background-color: #Da291c;
+      color: white;
+  
+    }
+    .Form-body p{
+      display: flex;
+    }
+  
+  
+  
+    .form .form-footer{
+    background: #f1f3f5;
+    padding: 10px;
+    color: black;
+    font-size: 5px;
+    }
+  
+    .form-footer p{
+      display: flex;
+      padding: 4px;
+    }
+   /* for  form drop down */
+  /*  concept is same as find store */
+   .form{
+     display: inline-block;
+     position: relative;
+   }
+  
+   .form .Sign-in:hover{
+     cursor: pointer;
+     color: green;
+   }
+   
+   .form .Sign-in:hover span{
+    cursor: pointer;
+    color: white;
+  }
+   .form .info{
+     position: absolute;
+     z-index: 1;
+     display: none;
+     padding-top: 1rem;
+     border: 1px solid black;
+   
+    
+    
+   }
+   .form .info > div{
+     display: block;
+  }
+  
+   .form:hover .info{
+     display: block;
+    
+  }
+  
+  /* css for header */
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFFFFFF2;
+    color: #414042;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+  
+    box-shadow: 1px 1px 4px  #FFFFFFF2;
+    box-shadow: -1px -1px 4px #FFFFFFF2;
+    
+  }
+  .header .logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 180px;
+    color: red;
+    margin-left: 70px;
+    margin-top: 15px;
+   
+  }
+  
+  .header .logo span{
+    color: black;
+    
+  }
+  
+  .header .header-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .header-links{
+    padding-top: 15px;  
+    display: flex;
+  }
+  .header-links p{
+    margin-left: 1rem;
+  }
+
+  .main-showcase > .showcase, .main-showcase > .showcase > h1 {
+    padding: 1rem 0;
+  }
+
+  .main-showcase{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+  }
+  
+  .options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    
+    
+  }
+
+  .options > div {
+    text-align: center;
+    border: 1px black solid;
+    height: 100px;
+    width: 300px;
+    border-radius: 12px;
+    width: 100%;
+  
+  }
+  
+  .options > .opt-1 , .options > .opt-2, .options > .opt-3, .options > .opt-4, .options > .opt-5, .options > .opt-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  
+  }
+  
+  .options > .opt-1 > p , .options > .opt-2 > p, .options > .opt-3 > p, .options > .opt-4 > p, .options > .opt-5 >p, .options > .opt-6 >p{
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  .options > .opt-1 > i , .options > .opt-2 > i, .options > .opt-3 > i, .options > .opt-4 > i, .options > .opt-5 > i, .options > .opt-6 > i{
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  
+  .options > .opt-1:hover , .options > .opt-2:hover, .options > .opt-3:hover, .options > .opt-4:hover, .options > .opt-5:hover, .options > .opt-6:hover{
+    background-color: #Da291c;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .four-topics{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+   
+  }
+  
+  .four-topics .topic-1 , .four-topics .topic-2 , .four-topics .topic-3 , .four-topics .topic-4{
+    height: 550px;
+    width: 500px;
+    background: white;
+    
+    
+  }
+  
+  .four-topics > .topic-1 > .img-topic-1{
+    background: url('/Img/img-topic-1.webp') no-repeat center center/cover;
+    height: 200px;
+    width: 500px;
+  
+  }
+  
+  .four-topics > .topic-2 > .img-topic-2{
+    background: url('/Img/img-topic-2.jpeg') no-repeat center center/cover;
+    height: 200px;
+    width: 500px;
+  
+  }
+  
+  .four-topics > .topic-3 > .img-topic-3{
+    background: url('/Img/img-topic-3.jpg') no-repeat center center/cover;
+    height: 200px;
+    width: 500px;
+  
+  }
+  
+  .four-topics > .topic-4 > .img-topic-4{
+    background: url('/Img/image-topic-4.jpg') no-repeat center center/cover;
+    height: 200px;
+    width: 500px;
+  
+  }
+  
+  .four-topics > .topic-1 > .topic-info-1{
+     padding: 2rem;
+  }
+  .four-topics > .topic-2 > .topic-info-2{
+    padding: 2rem;
+  }
+  .four-topics > .topic-3 > .topic-info-3{
+    padding: 2rem;
+  }
+  .four-topics > .topic-4 > .topic-info-4{
+    padding: 2rem;
+  }
+  
+  .four-topics > .topic-1 > .topic-info-1 > p{
+    padding-top: 3rem;
+  }
+  .four-topics > .topic-2 > .topic-info-2 > p{
+   padding-top: 3rem;
+  }
+  .four-topics > .topic-3 > .topic-info-3 > p{
+   padding-top: 3rem;
+  }
+  .four-topics > .topic-4 > .topic-info-4 > p{
+   padding-top: 3rem;
+  }
+  
+  .four-topics button{
+    height: 50px;
+    width: 250px;
+    background: #Da291c;
+    color: white;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .four-topics .buttons{
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .four-topics > .topic-2 > .buttons > #different{
+    background: white;
+    color: #Da291c;
+    border: 1px solid #Da291c;
+  }
+  
+  .four-topics > .topic-3 > .buttons > #c , .four-topics > .topic-4 > .buttons > #c {
+    margin-top: 3.5rem;
+  }
+  
+  .videos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin-right: 10rem;
+   
+  }
+  
+  .videos > .video-1 , .video-2 , .video-3{
+    height: 650px;
+    width: 402px;
+    background: white;
+    border: none;
+    margin: auto;
+  }
+  
+  .videos > .video-1 > .video-info-1 > h3 {
+     padding: 1rem;
+  }
+  .videos > .video-2 > .video-info-2 > h3{
+    padding: 1rem;
+  }
+  .videos > .video-3 > .video-info-3 > h3{
+    padding: 1rem;
+  }
+  
+  .videos > .video-1 > .video-info-1 > p {
+    padding: 1rem;
+  }
+  .videos > .video-2 > .video-info-2 > p{
+   padding: 0rem 1rem;
+  }
+  .videos > .video-3 > .video-info-3 > p{
+   padding: 1rem;
+  }
+  
+  .videos > .video-1 > .video-info-1 > button{
+    width: 250px;
+    height: 50px;
+    margin-left: 4.5rem;
+    margin-top: 4rem;
+    background: #Da291c;
+    color: white;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .videos > .video-2 > .video-info-2 > button{
+    width: 250px;
+    height: 50px;
+    margin-left: 4.5rem;
+    margin-top: 1rem;
+    background: #Da291c;
+    color: white;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .videos > .video-3 > .video-info-3 > button{
+    width: 250px;
+    height: 50px;
+    margin-left: 4.5rem;
+    margin-top: 4.5rem;
+    background: #Da291c;
+    color: white;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+  }
+  .section-video > p{
+    padding: 2rem 0rem;
+    font-weight: 800;
+    font-size: larger;
+  }
+  .support-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 4rem;
+    margin: auto;
+  }
+  
+  .support-list > .bl >  p , .support-list > .wl >  p ,.support-list > .inet >  p ,.support-list > .itv >  p  {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  .support-list > .bl >  ul > li, .support-list > .wl > ul > li ,.support-list > .inet > ul >  li ,.support-list > .itv > ul > li {
+    
+    padding: 8px 20px;
+    
+  }
+  
+  .support-list > .bl >  ul > li:hover, .support-list > .wl > ul > li:hover ,.support-list > .inet > ul >  li:hover ,.support-list > .itv > ul > li:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .support-list > .bl >  a, .support-list > .wl > a ,.support-list > .inet > a ,.support-list > .itv > a {
+    text-decoration: none;
+    color: purple;
+    padding: 2rem 2rem;
+    
+  }
+  
+  .support-list > .bl >  ul , .support-list > .wl > ul ,.support-list > .inet > ul ,.support-list > .itv > ul {
+    
+    padding: 0 3rem;
+    
+  }
+  
+  .all-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    margin: 1rem;
+  }
+  
+  .link-part-1 , .link-part-2 , .link-part-3 , .link-part-4{
+    list-style: none;
+    
+  }
+  
+  .link-part-1 > li , .link-part-2 > li , .link-part-3 > li , .link-part-4 > li{
+    padding: 0.5rem;
+    
+  }
+  
+  .link-part-1 > li:hover , .link-part-2 > li:hover , .link-part-3 > li:hover, .link-part-4 > li:hover{
+    color: blueviolet;
+    cursor: pointer;
+  }
+  
+  .link-part-4 > .social-links{
+    display: flex;
+    padding: 2rem 0.5rem;
+  }
+  
+  .link-part-4 > .social-links > li{
+    margin-right: 1rem;
+  }
+  /* css for class logo */
+  
+  .footer .logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 200px;
+    color: #Da291c;
+    margin-left: 1.5rem;
+    margin-top: 24px;
+   
+  }
+  
+  .footer .logo:hover{
+    transition: color 3s ease;
+    color: rebeccapurple; 
+    cursor: pointer;
+    text-shadow: rgb(14, 45, 221) 1px 1px 2px 2px;
+  }
+  
+  .footer .logo span{
+    color: black;
+  }
+  
+  .link-part-4  .social-links li a{
+    list-style: none;
+    color: black;
+  }
+  
+  .link-part-4  .social-links li:hover{
+    background: #Da291c;
+    border-radius: 12px;
+  }
+  
+  /*class: copy-right */
+   .footer > .copy-right{
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .footer{
+    padding: 0 1rem;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  
+}
